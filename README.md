@@ -5,7 +5,7 @@ Implementation of **Learning Domain-Invariant Representations for EEG Emotion Ge
 ## Overview
 
 This work studies **cross-subject EEG emotion recognition** under the **domain generalization** setting.  
-We propose an **RSA-based structural consistency regularizer** to align representational dissimilarity structures across subjects, encouraging the model to learn more subject-invariant and emotion-relevant latent representations. :contentReference[oaicite:1]{index=1}
+We propose an **RSA-based structural consistency regularizer** to align representational dissimilarity structures across subjects, encouraging the model to learn more subject-invariant and emotion-relevant latent representations.
 
 ## Datasets
 
@@ -24,7 +24,7 @@ Each sample is represented as a **310-dimensional** feature vector (62 channels 
 - Learning rate: 1e-3
 - Maximum training iterations: 1000
 - Evaluation protocol: **Leave-One-Subject-Out (LOSO)**
-- Random seed: 20 :contentReference
+- Random seed: 20 
 
 ## Results
 
