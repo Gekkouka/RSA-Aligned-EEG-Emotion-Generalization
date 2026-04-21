@@ -1,0 +1,39 @@
+# EEG-RSA
+dataset_name: "seed"  # 数据集 seed 或 seed4
+session: "1"           # 会话: "1", "2", "3" 或 传入 list ：[1 , 2, ...]
+feature: "de_LDS"
+channels: null         # None为全通道
+subjects: null         # None为全受试
+sub_num: 15
+seed3_path: "E:\\EEG_DataSets\\SEED\\ExtractedFeatures\\"
+seed3_num_of_class: 3
+seed4_path: "E:\\EEG_DataSets\\SEED_IV\\eeg_feature_smooth\\"
+seed4_num_of_class: 4
+tmp_saved_path: ./experiment_seed
+device: cuda
+
+# Random seed
+seed: 20
+
+# Training parameters
+batch_size: 96(abaondoned)
+k_per_trial: 12
+n_epochs: 1000
+max_iter: 1000
+early_stop: 1000
+log_interval: 1
+
+# Optimizer parameters
+lr: 1e-3
+weight_decay: 1e-5
+
+# Learning rate change parameters
+lr_gamma: 0.0003
+lr_decay: 0.75
+lr_scheduler: false
+transfer_loss_weight: 0.7
+
+# base parameters
+model_type: base
+transfer_loss_type: daan
+saved_model: false
