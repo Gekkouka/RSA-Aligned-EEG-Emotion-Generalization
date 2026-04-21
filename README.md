@@ -39,15 +39,6 @@ Each sample is represented as a **310-dimensional** feature vector (62 channels 
 
 The proposed method achieves the best accuracy on **SEED** and competitive performance with the lowest standard deviation on **SEED-IV**.
 
-## Project Structure
-
-```text
-model/      # model definitions
-train.py    # training script
-test.py     # evaluation script
-utils.py    # utility functions
-```
-
 ## Usage
 
 Before running the code, please first prepare a `config.yaml` file and set the required paths and hyperparameters.
